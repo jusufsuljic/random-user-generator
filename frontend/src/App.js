@@ -13,7 +13,7 @@ function App() {
   }, [])
 
   const loadUser = () => {
-    axios.get('http://localhost:80/random-user').then(res => {
+    axios.get('http://get-random-user.herokuapp.com/random-user').then(res => {
       console.log("Random user generated successfully!.", res.data);
       setRandomUser(res.data);
       setCopied(false)

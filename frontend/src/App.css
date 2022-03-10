@@ -58,20 +58,24 @@ body{
   outline: none;
  }
  
- .copy:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 7px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
- }
+ 
 
+@media(hover:hover){
+  .generate:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 7px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
 
- .generate:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 7px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
- }
+   .copy:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 7px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+}
+ 
  
  .generate, .copy:active {
   transform: translateY(-1px);

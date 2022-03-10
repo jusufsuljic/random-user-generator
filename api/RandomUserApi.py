@@ -15,7 +15,7 @@ class RandomUserApi(Resource):
         return {
             'firstName': random.choice(randomNames).rstrip(),
             'lastName': random.choice(randomLastNames).rstrip().lower().capitalize(),
-            'address':  random.choice(randomAddresses).rstrip(),
+            'address':  random.choice(randomAddresses).rstrip().split(",", 1)[0],
             'age': random.randint(18, 99),
             'gender': random.choice(['Male', 'Female'])
         }

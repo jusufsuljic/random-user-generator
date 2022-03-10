@@ -3,6 +3,7 @@ from selectors import DefaultSelector
 from flask import Flask, send_from_directory
 from flask_restful import Resource, Api
 #from flask_cors import CORS
+import os
 
 from api.RandomUserApi import RandomUserApi
 
